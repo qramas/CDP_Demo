@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+
+        <title>Kanban</title>
+
+		<style>
+
+			body
+			{
+				font-family:verdana,serif;
+			}
+
+			table
+			{
+				caption-side : top;
+				border-collapse: collapse;
+			}
+
+
+			td, th
+			{
+				border: 1px solid #ddd;
+				padding: 1%;
+			}
+
+
+
+			/* Titres */
+			caption
+			{
+				font-size: 3em;
+				margin-bottom: 4%;
+				/*font-weight: bold;*/
+			}
+
+			th
+			{
+				background-color:#CC6633;
+			}
+
+			.pre
+			{
+				background-color: #FFFF66;
+			}
+
+			.tr
+			{
+				background-color: #FF6666;
+			}
+
+			.db
+			{
+				background-color: #99FF66;
+			}
+
+			.lin
+			{
+				background-color: #996699;
+			}
+
+			.test
+			{
+				background-color: #6699FF;
+			}
+		</style>
+
+
+
+    </head>
+    <body>
+	<h1> Tâches</h1>
+	<h2>code couleur</h2>
+	<p>
+		<span class="pre">Jaune</span> correspond aux tâches de présentation. </br>
+		<span class="tr">Rouge</span> correspond aux tâches de traitement. </br>
+		<span class="db">Vert</span> correspond aux tâches sur la Base de donnée (écriture de la table et requêtes). </br>
+		<span class="lin">Violet</span> correspond aux tâches de liaison. </br>
+		<span class="test">Bleu</span> correspond aux tâches de test (en l'occurence, le test de validation). </br>
+	</p>
+		<table>
+			<caption>Kanban table</caption>
+
+			<tr>
+				<th>UserStory</th>
+				<th>ToDo</th>
+				<th>OnGoing</th>
+				<th>Done</th>
+		   </tr>
+
+			<tr>
+				<td rowspan="3"> All </td>
+				<td></td>
+				<td></td>
+				<td class="db">T7 - Table Atelier : Quentin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="test">TValid - Redac : Bérénice</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="test">TValid - Exec : Bérénice</td>
+
+			</tr>
+			<tr>
+				<td rowspan="4"> US1 : créer atelier </td>
+				<td></td>
+				<td></td>
+        <td class="pre">T1 : Valentin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="tr">T4 : Quentin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="db">T8 : Quentin</td>
+
+			</tr>
+			<tr>
+
+				<td></td>
+				<td></td>
+				<td class="lin">T11 : Quentin</td>
+
+			</tr>
+			<tr>
+				<td rowspan="4"> US2 : modifier atelier </td>
+				<td></td>
+				<td></td>
+				<td class="pre">T2 : Valentin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="tr">T5 : Quentin</td>
+
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="db">T9 : Quentin</td>
+
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="lin">T12 : Valentin </td> 
+			</tr>
+			<tr>
+				<td rowspan="4"> US3 : lister atelier </td>
+				<td></td>
+				<td></td>
+				<td class="pre">T3 : Valentin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="tr">T6 : Quentin</td>
+
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="db">T10 : Quentin</td>
+
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="lin">T13 : Valentin</td>
+			</tr>
+
+		</table>
+
+    </body>
+</html>
