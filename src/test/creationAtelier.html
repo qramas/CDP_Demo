@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>CreationAtelier</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreationAtelier</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/CDP_Dev/src/web/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=liste.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@href='inscription.php']</td>
+	<td>Inscrire un atelier</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Inscrire un atelier</td>
+	<td></td>
+</tr>
+<!---- Creation d'un atelier -- page inscription-->
+<tr>
+	<td>type</td>
+	<td>id=input-titre</td>
+	<td>Liquides durs</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-theme</td>
+	<td>fluides</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-type</td>
+	<td>scientifique</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=a2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pm2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-animateurs</td>
+	<td>toto</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-adresse</td>
+	<td>CRPP CNRS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-cp</td>
+	<td>33600</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=input-zone</td>
+	<td>label=D</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-ville</td>
+	<td>Pessac</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-duree</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-capacitee</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-resume</td>
+	<td>les fluides complexes ...</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-disciplines</td>
+	<td>Chimie</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Lister les ateliers</td>
+	<td></td>
+</tr>
+<!---- Contrôle de la création - dans la page Liste-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[1]</td>
+	<td>Liquides durs</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>scientifique</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[3]</td>
+	<td>30min</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[4]</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>D</td>
+</tr>
+</tbody></table>
+</body>
+</html>
